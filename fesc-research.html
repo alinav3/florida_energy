@@ -3,58 +3,83 @@
 <head>
   <title>Florida Energy Systems Consortium (FESC)</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <!--  open graph - facebook-->
+  <meta content="https://alinav3.github.io/florida_energy/" property="og:url">
+  <meta content="Florida Energy Systems Consortium (FESC)" property="og:title">
+  <meta content="website" property="og:type">
+  <meta content="We perform research and development on innovative energy systems that lead to alternative energy strategies." property="og:description">
+  <meta content="http://www.verengosolar.com/sites/default/files/How_Solar_Works_01_770x290.png" property="og:image">
+  <meta content="770" property="og:image:width">
+  <meta content="290" property="og:image:height">
+  <!--  open graph - twitter-->
+  <meta content="https://alinav3.github.io/florida_energy/" name="twitter:url">
+  <meta content="Florida Energy Systems Consortium (FESC)" name="twitter:title">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="We perform research and development on innovative energy systems that lead to alternative energy strategies." name="twitter:description">
+  <meta content="http://www.verengosolar.com/sites/default/files/How_Solar_Works_01_770x290.png" name="”twitter:image”">
+  <!-- Twitter widget JavaScript-->
+  <script>
+  window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+  }(document, "script", "twitter-wjs"));
+  </script>
 </head>
 <body>
-
-<!--Top level navigation + Search box inside the nav menu-->
+  <!--Top level navigation + Search box inside the nav menu-->
   <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="fesc-research.html" class="active">Research</a>
-  <a href="education.html">Education</a>
-  <a href="#contact-us">Contact</a>
-  <input type="text" placeholder="Search">
-</div>
-  <h1>FESC Funded Projects</h1>
-  <h2>Research Vision</h2>
-
+    <a href="index.html">Home</a> <a class="active" href="fesc-research.html">Research</a> <a href="education.html">Education</a> <a href="#contact-us">Contact</a> <input placeholder="Search" type="text">
+  </div>
+  <h1>FESC Funded Projects
+  </h1>
+  <h2>Research Vision
+  </h2>
   <p>
-    The Florida Energy System Consortium (FESC) performs scholarly research and analysis of energy systems that contributes to a sustainable energy economy for Florida. In formulating a research plan for FESC, it became obvious that while most current university research was focused on specific energy components, a research gap existed from a systems perspective. It was believed that combining expertise at the State universities would position university researchers to address energy systems in a manner not possible at a single university. Building on this observation, our stated vision is to be a world leader in energy research enabled by a systems approach. 
+    The Florida Energy System Consortium (FESC) performs scholarly research and analysis of energy systems that contributes to a sustainable energy economy for Florida. In formulating a research plan for FESC, it became obvious that while most current university research was focused on specific energy components, a research gap existed from a systems perspective. It was believed that combining expertise at the State universities would position university researchers to address energy systems in a manner not possible at a single university. Building on this observation, our stated vision is to be a world leader in energy research enabled by a systems approach.
   </p>
-    
   <p>
-    The Florida Energy Systems Consortium research funding was designated for FAU, FIU, FSU, UCF, UF, and USF. The FESC Steering Committee set a collaborative university research agenda that focuses on those areas that can most impact the State of Florida. This agenda has an overarching strategic research direction of understanding Florida’s energy systems. By doing so, the Consortium provides meaningful analyses to guide the development of a State strategic energy plan, identify opportunities for improved efficiency, and assess the impact of proposed changes, all of which lead to more informed actions.  
+    The Florida Energy Systems Consortium research funding was designated for FAU, FIU, FSU, UCF, UF, and USF. The FESC Steering Committee set a collaborative university research agenda that focuses on those areas that can most impact the State of Florida. This agenda has an overarching strategic research direction of understanding Florida’s energy systems. By doing so, the Consortium provides meaningful analyses to guide the development of a State strategic energy plan, identify opportunities for improved efficiency, and assess the impact of proposed changes, all of which lead to more informed actions.
   </p>
-  
-  <h3>Strategic Research Thrusts of FESC</h3>
+  <h3>
+    Strategic Research Thrusts of FESC
+  </h3>
   <ul>
-   <li>Understanding Florida’s Energy Systems (Overarching)</li>
-   <li>Enhancing Energy Efficiency and Conservation</li>
-   <li>Developing Florida’s Biomass Resources</li>
-   <li>Harnessing Florida’s Solar Resources</li>
-   <li>Ensuring Nuclear Energy &amp; Carbon Constrained Technologies for Electric Power in Florida</li>
-   <li>Exploiting Florida’s Ocean Energy Resources</li>
-   <li>Securing our Energy Storage and Delivery Infrastructure</li>
-   
-
+    <li>Understanding Florida’s Energy Systems (Overarching)</li>
+    <li>Enhancing Energy Efficiency and Conservation</li>
+    <li>Developing Florida’s Biomass Resources</li>
+    <li>Harnessing Florida’s Solar Resources</li>
+    <li>Ensuring Nuclear Energy &amp; Carbon Constrained Technologies for Electric Power in Florida</li>
+    <li>Exploiting Florida’s Ocean Energy Resources</li>
+    <li>Securing our Energy Storage and Delivery Infrastructure</li>
   </ul>
-<!--  Social media icons + share button + Sign up form + 12 Universities logos + Copyright -->
-<footer>
-  
+  <!--  Social media icons + share button + Sign up form + 12 Universities logos + Copyright -->
+  <footer>
     <form>
-    <label>
-        Sign up for the envelope FESC Newsletter
-        <input type="email" name="email">
-      </label>
-      <input type="submit" value="Sign Up">
+      <label>Sign up for the envelope FESC Newsletter <input name="email" type="email"></label> <input type="submit" value="Sign Up">
     </form>
-  
- <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-linkedin"></a>
-  <h4>Copyright &copy; 2008-2015 Florida Energy Systems Consortium.</h4>    
-
-</footer>
+    <!--Tweeter share button-->
+    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Florida+Energy+Systems+Consortium+%28FESC%29+https%3A%2F%2Falinav3.github.io%2Fflorida_energy%2F">Tweet</a> 
+    <!--Facebook share button-->
+    <iframe frameborder="0" height="20" scrolling="no" src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Falinav3.github.io%2Fflorida_energy%2F&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" style="border:none;overflow:hidden" width="59"></iframe> 
+    <!--Tumblr share button-->
+    <a class="tumblr-share-button" data-color="blue" data-notes="right" href="https://embed.tumblr.com/share"></a> 
+    <script>
+    !function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");
+    </script>
+    <h2>Copyright &copy; 2008-2015 Florida Energy Systems Consortium.</h2>
+  </footer>
 </body>
 </html>
