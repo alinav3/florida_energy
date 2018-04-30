@@ -1,0 +1,82 @@
+body {
+  font-family: 'Tajawal', sans-serif;
+  margin: 1rem;
+  color: #545454;
+}
+h1 {
+  font-family: 'Passion One', cursive;
+  letter-spacing: 0.03rem;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+
+p, li{
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+p{
+  padding-bottom: 0.9rem;
+}
+/*Search box*/
+.right{
+  float: right;
+}
+/*Logo, Top level navigation menu*/
+.topnav{
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 0.3rem;
+    background-color:#fad579; 
+    text-decoration: none;
+
+}
+li img {
+ padding: 0.5rem 3rem 0 0;
+}
+
+li{
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+  padding-right: 3rem;
+  color: black;
+}
+li a:hover {
+  background-color: #f1f1f1;
+}
+li a, .dropbtn {
+    display: inline-block;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.active {
+  background-color: #7fffd4;
+}
+/*footer*/
+.slide img{
+  width: 10rem;
+}
+.bx-viewport{box-shadow:none !important;}

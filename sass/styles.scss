@@ -19,6 +19,7 @@
   <meta content="We perform research and development on innovative energy systems that lead to alternative energy strategies." name="twitter:description">
   <meta content="http://www.verengosolar.com/sites/default/files/How_Solar_Works_01_770x290.png" name="”twitter:image”">
   <!-- Twitter widget JavaScript-->
+
   <script>
   window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
@@ -39,34 +40,16 @@
   </script>
   <!--font-awesome-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <!--  google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Passion+One|Tajawal" rel="stylesheet">
-  <link href="styles/reset.css" rel="stylesheet">
-  <!--  css-->
-  <link rel="stylesheet" style="text/css" href="styles/styles.css">
 </head>
 <body>
+  <!--  Logo + background video-->
   <header>
-<!--    Search box-->
-    <div class="right"><input placeholder="Search" type="text"><i class="fa fa-search"></i></div>
-    <a href="index.html"><img alt="FESC logo" src="images/fesc_logo_black_text_transp.png" alt="fesc logo"> </a>
-<!--  Logo, Top level navigation menu-->
-    <ul class="topnav">
-    <li><a href="fesc-research.html">Research</a></li> 
-    <li><a href="education.html">Education</a></li>
-    <li><a href="#">Contact</a></li> 
-    <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">More <i class="fa fa-angle-double-down"></i></a>
-    <div class="dropdown-content">
-      <a href="#">Outreach</a>
-      <a href="#">User Facilities</a>
-      <a href="#">Energy Industry</a>
-      <a href="#">Advisory Board</a>
-    </div>
-    </ul>
-
+    <img alt="FESC logo" src="images/fesc_logo_black_text_transp.png"> <img alt="Solar energy illustration" src="http://www.verengosolar.com/sites/default/files/How_Solar_Works_01_770x290.png">
   </header>
-    <img alt="Solar energy illustration" src="http://www.verengosolar.com/sites/default/files/How_Solar_Works_01_770x290.png">
+  <!--Top level navigation + Search box inside the nav menu-->
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a> <a href="fesc-research.html">Research</a> <a href="education.html">Education</a> <a href="#contact-us">Contact</a> <input placeholder="Search" type="text"><i class="fa fa-search"></i>
+  </div>
   <h1>
     FESC Bringing Energy Solutions to Florida, the Nation and the World
   </h1>
@@ -88,33 +71,6 @@
   </ol>
   <!--  Social media icons + share button + Sign up form + 12 Universities logos + Copyright -->
   <footer>
-<!--    Logo Carousel-->
-  <div class="slider1">
-    <div class="slide"><a href="http://www.famu.edu/"><img src="images/famu-logo.png" alt="famu logo"></a></div>
-      
-    <div class="slide"><a href="http://www.fau.edu/"><img src="images/fau-logo.png" alt="fau logo"></a></div>
-      
-    <div class="slide"><a href="http://www.fgcu.edu/"><img src="images/fgcu-logo.png" alt="fgcu logo"></a></div>
-      
-      <div class="slide"><a href="http://www.fiu.edu/"><img src="images/fiu_logo.png" alt="fiu logo"></a></div>
-      
-    <div class="slide"><a href="https://www.fsu.edu/"><img src="images/florida-state-university-logo.png" alt="florida state university logo"></a></div>
-      
-    <div class="slide"><a href="http://www.floridapoly.edu/"><img src="images/fp_logo.png" alt="florida polytechnic logo"></a></div>
-      
-    <div class="slide"><a href="http://www.ncf.edu/"><img src="images/ncf-logo.png" alt="ncf logo"></a></div>
-      
-    <div class="slide"><a href="http://www.usf.edu/"><img src="images/ucf-logo.png" alt="ucf logo"></a></div>
-      
-    <div class="slide"><a href="http://www.ufl.edu/"><img src="images/uf-logo.png" alt="university of florida logo"></a></div>
-      
-    <div class="slide"><a href="http://www.unf.edu/"><img src="images/unf-logo.png" alt="unf logo"></a></div>
-      
-    <div class="slide"><a href="http://www.usf.edu/"><img src="images/usf-logo.png" alt="usf logo"></a></div>
-      
-    <div class="slide"><a href="http://www.uwf.edu/"><img src="images/uwf-logo.png" alt="uwf logo"></a></div>
-  </div>
-
     <form>
       <label>Sign up for the envelope FESC Newsletter <input name="email" type="email"></label> <input type="submit" value="Sign Up">
     </form>
