@@ -3,47 +3,39 @@ body {
   margin: 1rem;
   color: #545454;
 }
-h1 {
-  font-family: 'Passion One', cursive;
-  letter-spacing: 0.03rem;
-  margin-bottom: 0.5rem;
-  font-size: 3rem;
-}
 
-p, li{
-  font-size: 1.3rem;
-  line-height: 1.5rem;
-}
-p{
-  padding-bottom: 0.9rem;
-}
-/*Search box*/
-.right{
-  float: right;
+.logo {
+ margin-left: 3rem;
 }
 /*Logo, Top level navigation menu*/
 .topnav{
-    list-style-type: none;
-    margin: 0;
-    padding-bottom: 0.3rem;
+    overflow: hidden;
     background-color:#fad579; 
-    text-decoration: none;
+}
+.topnav input {
+    float: left;
+    width: 19rem;
+    padding: 0.5rem;
+    border: none;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
 
-}
-li img {
- padding: 0.5rem 3rem 0 0;
-}
 
 li{
-    display: inline;
+    display: inline-flex;
 }
 
 li a {
-    text-decoration: none;
-  padding-right: 3rem;
+  text-decoration: none;
+  padding: 1rem;
   color: black;
 }
 li a:hover {
+  background-color: #f1f1f1;
+}
+.active {
   background-color: #f1f1f1;
 }
 li a, .dropbtn {
@@ -68,15 +60,71 @@ li.dropdown {
     display: block;
     text-align: left;
 }
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #fad579}
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.active {
-  background-color: #7fffd4;
+
+/*main text with two columns*/
+
+.content {
+	display: flex;
+	flex-direction: row;
+    margin: 2rem;
+}
+h1{
+  font-family: 'Passion One', cursive;
+  letter-spacing: 0.03rem;
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+p, li{
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  text-align: justify;
+  padding-bottom: 0.5rem;
+}
+
+.left {
+  padding-right: 1.5rem;
+  border-right: solid 3px #fad579;
+}
+
+.right {
+  padding-left: 1.5rem;
 }
 /*footer*/
 .slide img{
   width: 10rem;
 }
 .bx-viewport{box-shadow:none !important;}
+
+/*
+Basic Responsive Styles 
+*/
+
+@media screen and (max-width: 1000px) {
+			.content {
+		      flex-direction: column;
+			}
+h1{
+  font-family: 'Passion One', cursive;
+  letter-spacing: 0.03rem;
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+p, li{
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  padding-bottom: 0.5rem;
+}
+.right {
+  padding: 0;
+}
+  .left {
+    padding: 0;
+  border: none;
+}
+}
