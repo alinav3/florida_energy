@@ -37,14 +37,39 @@
   return t;
   }(document, "script", "twitter-wjs"));
   </script>
+  <!--font-awesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--  google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Passion+One%7CTajawal" rel="stylesheet">
+  <link href="styles/reset.css" rel="stylesheet">
+  <!--  css-->
+  <link rel="stylesheet" style="text/css" href="new-styles.css/new-styles.css">
 </head>
 <body>
-  <!--  Logo + background video-->
-  <!--Top level navigation + Search box inside the nav menu-->
-  <div class="topnav">
-    <a href="index.html">Home</a> <a href="fesc-research.html">Research</a> <a class="active" href="education.html">Education</a> <a href="#contact-us">Contact</a> <input placeholder="Search" type="text">
-  </div><img alt="students in the class" src="images/students-in-the-class.jpg">
-  <h1>
+  <header>
+<!--    Logo-->
+    <a href="index.html"><img class="logo" alt="FESC logo" src="images/fesc_logo_black_text_transp.png"> </a>
+<!--  Top level navigation menu-->
+    <ul class="topnav">
+    <!--    Search box-->
+    <li><input placeholder="Search" type="text"></li>
+    <li><a href="fesc-research.html" >Research</a></li> 
+    <li><a href="education.html" class="active">Education</a></li>
+    <li><a href="#">Contact</a></li> 
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">More <i class="fa fa-angle-double-down"></i></a>
+    <div class="dropdown-content">
+      <a href="#">Outreach</a>
+      <a href="#">User Facilities</a>
+      <a href="#">Energy Industry</a>
+      <a href="#">Advisory Board</a>
+    </div>
+    </ul>
+      </header>
+<!--  main text with two columns-->
+  <section class="content">
+  <div class="left">
+    <h1>
     Energy Education/ Energy Jobs
   </h1>
   <p>
@@ -53,6 +78,8 @@
   <p>
     FESC’s training and educational efforts are aimed at multiple levels of the career ladder: community college trained technicians, bachelors level students, graduate researchers, and practitioners who seek to update their existing skills. This statewide initiative is being distributed across partner institutions and capitalizes on each institution’s strengths to provide educational opportunities for both the conventional power generation industries and newly created energy related industries. New curricula in energy and coordinated programs across multiple universities is being developed to greatly expand the availability of energy education supporting existing and emerging energy industries in Florida. The program also includes components targeted to public and commercial sectors. For the commercial sector, the FESC Education Program is working closely with the Industrial Partners Program to ensure rapid dissemination of Center research results to this important constituent group.
   </p>
+    </div>
+    <div class="right">
   <p>
     The Education program has three focus areas, community college programming at the AS and certificate level, nuclear energy education, and a Masters degree in sustainable energy. FESC has also reached out to Florida’s youth through SAVE: Steps in Achieving Viable Energy. Part of Florida 4-H Youth Development, youths ages 11-13 learn what energy is, its different forms, how it is used, and how the world is impacted by energy use. Florida’s State and Community Colleges offer an opportunity to develop a trained energy workforce through programming for two-year or four-year degrees.
   </p>
@@ -62,8 +89,37 @@
   <p>
     At the University level, programming includes a curriculum directed at the nuclear industry workforce, which now operates five nuclear power plants (FPL and PEF). To meet the demand anticipated from retirement and expansion, FESC has made a significant investment in the UF training reactor. FESC is developing a program to promote careers in nuclear energy and is evaluating the potential development of a community college level course that will introduce students to nuclear engineering and prepare them for pursuing a degree in the field. FESC is also developing a new M.S. degree program in Sustainable Energy and Power Engineering that will be distance delivered to make it available to the broadest of audiences.
   </p>
+    </div>
+  </section>
   <!--  Social media icons + share button + Sign up form + 12 Universities logos + Copyright -->
   <footer>
+<!--    Logo Carousel-->
+  <div class="container">
+   <div class="slide"><a href="http://www.famu.edu/"><img src="images/famu-logo.png" alt="famu logo"></a></div>
+      
+    <div class="slide"><a href="http://www.fau.edu/"><img src="images/fau-logo.png" alt="fau logo"></a></div>
+      
+    <div class="slide"><a href="http://www.fgcu.edu/"><img src="images/fgcu-logo.png" alt="fgcu logo"></a></div>
+      
+      <div class="slide"><a href="http://www.fiu.edu/"><img src="images/fiu_logo.png" alt="fiu logo"></a></div>
+      
+    <div class="slide"><a href="https://www.fsu.edu/"><img src="images/florida-state-university-logo.png" alt="florida state university logo"></a></div>
+      
+    <div class="slide"><a href="http://www.floridapoly.edu/"><img src="images/fp_logo.png" alt="florida polytechnic logo"></a></div>
+      
+    <div class="slide"><a href="http://www.ncf.edu/"><img src="images/ncf-logo.png" alt="ncf logo"></a></div>
+      
+    <div class="slide"><a href="http://www.usf.edu/"><img src="images/ucf-logo.png" alt="ucf logo"></a></div>
+      
+    <div class="slide"><a href="http://www.ufl.edu/"><img src="images/uf-logo.png" alt="university of florida logo"></a></div>
+      
+    <div class="slide"><a href="http://www.unf.edu/"><img src="images/unf-logo.png" alt="unf logo"></a></div>
+      
+    <div class="slide"><a href="http://www.usf.edu/"><img src="images/usf-logo.png" alt="usf logo"></a></div>
+      
+    <div class="slide"><a href="http://www.uwf.edu/"><img src="images/uwf-logo.png" alt="uwf logo"></a></div>
+</div>
+
     <form>
       <label>Sign up for the envelope FESC Newsletter <input name="email" type="email"></label> <input type="submit" value="Sign Up">
     </form>
