@@ -13,22 +13,18 @@ body {
   .topnav input {
     float: left;
     width: 19rem;
-    padding: 0.5rem;
     border: none;
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
     font-size: 1rem; }
-
-li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex; }
-  li a {
-    text-decoration: none;
-    padding: 1rem;
-    color: black; }
-  li a:hover {
-    background-color: #f1f1f1; }
+  .topnav li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    .topnav li a {
+      text-decoration: none;
+      padding: 1rem;
+      color: black; }
+    .topnav li a:hover {
+      background-color: #f1f1f1; }
 
 .active {
   background-color: #f1f1f1; }
@@ -59,13 +55,23 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block; }
 
-/*header image*/
-.main-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+/* SVG hero image*/
+.hero-img {
+  width: 100%;
+  height: 100%; }
 
 /*main text with two columns*/
+h1 {
+  font-family: 'Passion One', cursive;
+  letter-spacing: 0.03rem;
+  font-size: 3.5rem;
+  margin: 1.5rem; }
+
+h2 {
+  font-family: 'Passion One', cursive;
+  font-size: 1.5rem;
+  margin: 1rem; }
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,28 +82,19 @@ li.dropdown {
           flex-direction: row;
   margin: 2rem; }
 
-h1 {
-  font-family: 'Passion One', cursive;
-  letter-spacing: 0.03rem;
-  font-size: 3rem;
-  padding-bottom: 1.5rem; }
-
 p, li {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.7rem;
-  text-align: justify;
   padding-bottom: 0.5rem; }
 
 .left {
   padding-right: 1.5rem;
-  border-right: solid 3px #fad579; }
+  border-right: solid 3px #fad579;
+  width: 50%; }
 
 .right {
-  padding-left: 1.5rem; }
-
-.fa-check-circle {
-  color: #fad579;
-  padding-right: 0.5rem; }
+  padding-left: 1.5rem;
+  width: 50%; }
 
 /*footer*/
 .container {
@@ -108,10 +105,21 @@ p, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 2rem; }
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  margin-bottom: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .slide {
-  width: 100px; }
+  display: inline-block;
+  width: 160px;
+  height: 70px;
+  margin: 0.5rem; }
 
 /*
 Basic Responsive Styles 
@@ -123,22 +131,18 @@ Basic Responsive Styles
         -ms-flex-direction: column;
             flex-direction: column; }
 
-  h1 {
-    font-family: 'Passion One', cursive;
-    letter-spacing: 0.03rem;
-    font-size: 3rem;
-    padding-bottom: 1.5rem; }
-
   p, li {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.7rem;
     padding-bottom: 0.5rem; }
 
   .right {
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
 
   .left {
     padding: 0;
-    border: none; } }
+    border: none;
+    width: 100%; } }
 
 /*# sourceMappingURL=new-styles.css.map */
