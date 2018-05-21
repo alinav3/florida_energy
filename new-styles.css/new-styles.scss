@@ -103,7 +103,6 @@ p, li{
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-  margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -113,8 +112,11 @@ p, li{
   height:70px;
   margin: 0.5rem;
 }
+.chart {
+  width: 80%; 
+}
 /*
-Basic Responsive Styles 
+Responsive Styles 
 */
 
 @media screen and (max-width: 1000px) {
