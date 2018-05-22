@@ -73,7 +73,7 @@ h1{
   margin: 1.5rem;
 }
 
-h2{
+.headline {
   font-family: 'Passion One', cursive;
   font-size: 1.5rem;
   margin: 1rem;
@@ -82,11 +82,12 @@ h2{
 	display: flex;
 	flex-direction: row;
     margin: 2rem;
+  line-height: 2rem;
 }
 
 p, li{
   font-size: 1.5rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
   padding-bottom: 0.5rem;
 }
 .left {
@@ -111,10 +112,7 @@ p, li{
   width:160px;
   height:70px;
   margin: 0.5rem;
-}
-.chart {
-  width: 80%; 
-}
+  
 /*
 Responsive Styles 
 */
