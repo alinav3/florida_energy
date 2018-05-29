@@ -43,16 +43,18 @@
   <link href="https://fonts.googleapis.com/css?family=Passion+One%7CTajawal" rel="stylesheet">
   <link href="styles/reset.css" rel="stylesheet">
   <!--  css-->
-  <link rel="stylesheet" style="text/css" href="new-styles.css/new-styles.css">
-</head>
+  <link href="new-styles.css/new-styles.css" rel="stylesheet" style="text/css">
+  <!--  Vue.js-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
 <body>
+    <div id="app">
   <header>
 <!--    Logo-->
     <a href="index.html"><img class="logo" alt="FESC logo" src="images/fesc_logo_black_text_transp.png"> </a>
+     
 <!--  Top level navigation menu-->
     <ul class="topnav">
-    <!--    Search box-->
-    <li><input placeholder="Search" type="text"></li>
     <li><a href="fesc-research.html">Research</a></li> 
     <li><a href="education.html">Education</a></li>
     <li><a href="#">Contact</a></li> 
@@ -63,6 +65,8 @@
       <a href="#">User Facilities</a>
       <a href="#">Energy Industry</a>
       <a href="#">Advisory Board</a>
+      <!--    Search box-->
+    <li><input placeholder="Search.." type="text" name="search" class="search"></li>
     </div>
     </ul>
   </header>
@@ -99,7 +103,7 @@
     </div>
     </section>
   <footer>
-<!--    Logo showcase-->
+<!--   + 12 Universities logos showcase-->
   <div class="container">
    <div class="slide"><a href="http://www.famu.edu/" target="_blank"><img src="images/ai/famu-logo.svg" alt="famu logo" ></a></div>
       
@@ -125,10 +129,27 @@
       
     <div class="slide"><a href="http://www.uwf.edu/"  target="_blank"><img src="images/ai/uwf-logo.svg" alt="uwf logo"></a></div>
 </div>
-     <!--  Social media icons + share button + Sign up form + 12 Universities logos + Copyright -->
-    <form>
-      <label>Sign up for the envelope FESC Newsletter <input name="email" type="email"></label> <input type="submit" value="Sign Up">
-    </form>
+     <!--  Sign up form with vue.js-->
+    <form @submit.prevent="submit">
+    <div>
+      <p v-show="!email.valid">Oh, please enter a valid email address.</p>
+        </div>
+   <fieldset>
+      <legend>Sign up for the envelope FESC Newsletter:</legend>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required="" v-model="name">
+      </div>
+      <div>
+        <label for="email">Email</label>
+      <input type="email" name="email" id="email" required=""
+               v-model="email.value">
+      </div>
+        </fieldset>
+       <input class="submit" type="submit" value="Submit">
+  </form>
+<!--    Social media icons + Copyright-->
+    <div class="social">
     <!--Tweeter share button-->
     <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Florida+Energy+Systems+Consortium+%28FESC%29+https%3A%2F%2Falinav3.github.io%2Fflorida_energy%2F">Tweet</a> 
     <!--Facebook share button-->
@@ -138,7 +159,10 @@
     <script>
     !function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");
     </script>
-    <h2>Copyright &copy; 2008-2015 Florida Energy Systems Consortium.</h2>
+    </div>
+    <h2 class="copyright">Copyright &copy; 2008-2015 Florida Energy Systems Consortium.</h2>
   </footer>
+ <script src="js/script.js"></script>
+  </div>
 </body>
 </html>

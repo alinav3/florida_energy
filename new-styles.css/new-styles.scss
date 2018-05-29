@@ -6,9 +6,17 @@ body {
   color: #545454;
 }
 .logo {
-  margin-left: 3rem;
+  margin: 0 3rem 0 3rem;
 }
-/*Top level navigation menu*/
+.search {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: $light-grey;;
+    padding: 0.3rem;
+    margin-bottom: 0;
+}
+//Top level navigation menu
 .topnav {
   overflow: hidden;
   background-color: $main-color;
@@ -60,13 +68,13 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* SVG hero image*/
+//SVG hero image
 
 .hero-img {
   width: 100%;
   height: 100%;
 }
-/*main text with two columns*/
+//main text with two columns
 h1 {
   font-family: 'Passion One', cursive;
   letter-spacing: 0.03rem;
@@ -97,7 +105,8 @@ p, li {
   padding-left: 1.5rem;
   width: 50%;
 }
-/*footer*/
+//footer
+
 .container {
   display: flex;
   flex-direction: row;
@@ -110,9 +119,35 @@ p, li {
   width: 160px;
   height: 70px;
   margin: 0.5rem;
-  /*
-Responsive Styles 
-*/
+}
+.copyright{
+ margin: 1rem 0;
+}
+
+.social {
+  margin-top: 1rem;
+}
+  //vue sign up form
+legend, label, input {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+legend {
+  font-size: 1.5rem;
+}
+.submit {
+  background-color: $main-color; 
+  border-radius: 5px;
+  border: 0;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0;
+}
+form {
+  background-color:$light-grey;
+  padding: 0.5rem;
+}
+//Responsive Styles 
   @media screen and (max-width: 1000px) {
     .content {
       flex-direction: column;

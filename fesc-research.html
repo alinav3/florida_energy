@@ -122,21 +122,20 @@
   </script>
   <!--font-awesome-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <!--  google fonts-->
+ <!--  google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Passion+One%7CTajawal" rel="stylesheet">
   <link href="styles/reset.css" rel="stylesheet">
   <!--  css-->
-  <link rel="stylesheet" style="text/css" href="new-styles.css/new-styles.css">
+  <link href="new-styles.css/new-styles.css" rel="stylesheet" style="text/css">
 </head>
 <body>
   <header>
 <!--    Logo-->
     <a href="index.html"><img class="logo" alt="FESC logo" src="images/fesc_logo_black_text_transp.png"> </a>
+     
 <!--  Top level navigation menu-->
     <ul class="topnav">
-    <!--    Search box-->
-    <li><input placeholder="Search" type="text"></li>
-    <li><a href="fesc-research.html" class="active">Research</a></li> 
+    <li><a href="fesc-research.html">Research</a></li> 
     <li><a href="education.html">Education</a></li>
     <li><a href="#">Contact</a></li> 
     <li class="dropdown">
@@ -146,9 +145,11 @@
       <a href="#">User Facilities</a>
       <a href="#">Energy Industry</a>
       <a href="#">Advisory Board</a>
+      <!--    Search box-->
+    <li><input placeholder="Search.." type="text" name="search" class="search"></li>
     </div>
     </ul>
-    </header>
+  </header>
 <!--  main text with two columns-->
   <h1>FESC Funded Projects
   </h1>
@@ -205,10 +206,7 @@
       
     <div class="slide"><a href="http://www.uwf.edu/"  target="_blank"><img src="images/ai/uwf-logo.svg" alt="uwf logo"></a></div>
 </div>
- <!--  Social media icons + share button + Sign up form + 12 Universities logos + Copyright -->
-    <form>
-      <label>Sign up for the envelope FESC Newsletter <input name="email" type="email"></label> <input type="submit" value="Sign Up">
-    </form>a
+ <!--  Social media icons + share button + 12 Universities logos + Copyright -->
     <!--Tweeter share button-->
     <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Florida+Energy+Systems+Consortium+%28FESC%29+https%3A%2F%2Falinav3.github.io%2Fflorida_energy%2F">Tweet</a> 
     <!--Facebook share button-->
@@ -218,7 +216,7 @@
     <script>
     !function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");
     </script>
-    <h3>Copyright &copy; 2008-2015 Florida Energy Systems Consortium.</h3>
+    <h3 class="copyright">Copyright &copy; 2008-2015 Florida Energy Systems Consortium.</h3>
   </footer>
 </body>
 </html>
