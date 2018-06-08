@@ -3,7 +3,6 @@ new Vue({
   // the instance state
   data: function() {
     return {
-      name: "Mike Doe",
       email: {
         value: "Mike@gmail.com",
         valid: true
