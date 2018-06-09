@@ -15,7 +15,7 @@ body {
   margin-bottom: 0; }
 
 .logo {
-  margin-right: 3rem; }
+  width: 12rem; }
 
 .topnav {
   background-color: white;
@@ -29,7 +29,10 @@ body {
     float: left;
     width: 19rem;
     border: none;
-    font-size: 1rem; }
+    font-size: 1rem;
+    margin-left: 3rem; }
+  .topnav .active {
+    color: #f8b921; }
   .topnav li {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -41,13 +44,29 @@ body {
       color: #545454;
       font-size: 1.3rem; }
     .topnav li a:hover {
-      color: #fad579; }
+      color: #f8b921; }
 
 li a, .dropbtn {
   display: inline-block; }
 
 li.dropdown {
   display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+  .dropdown-content a {
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
 
 .hero-img {
   margin-top: 12rem;
