@@ -5,8 +5,53 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
 <!--  Google charts-->
-    <title>HTTP Requests</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(getData);
+      function drawBasic(freshData) {
+        console.log("freshData", freshData)
+        freshData.unshift(["Year", "Billion BTUs"])
+        var data = google.visualization.arrayToDataTable(freshData);
+        var options = {
+          title: 'Energy Production in Florida',
+          legend: 'none',
+          curveType: 'function',
+          backgroundColor: '#f1f1f1',
+          lineWidth:3,
+          hAxis: { minValue: 0, maxValue: 9 },
+          curveType: 'function',
+          pointSize: 5,
+          chartArea: {width: '50%'},
+          colors:['#f8b921', '#545454'],
+          hAxis: {
+          title: 'BTUs',
+          minValue: 0
+          }
+        };
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+      function getData(){
+        // Create a new request object
+        let request = new XMLHttpRequest()
+        // URL to contact goes here
+        let requestUrl = "https://api.eia.gov/series/?api_key=43fd391551b1a57ac02073fb37571ca7&series_id=SEDS.REPRB.FL.A"
+        // Open a connection
+        request.open('GET', requestUrl, true)
+        // Callback for when the request completes
+        request.onload = function(){
+          let theActualData = JSON.parse(request.response).series[0].data
+          drawBasic(theActualData)
+        }
+        // Callback for when there's an error
+        request.error = function(err){
+          console.log("error is: ", err)
+        }
+        // Send the request to the specified URL
+        request.send()
+      }
+    </script>
   <!--  open graph - facebook-->
   <meta content="https://alinav3.github.io/florida_energy/" property="og:url">
   <meta content="Florida Energy Systems Consortium (FESC)" property="og:title">
@@ -42,15 +87,15 @@
   <link href="https://fonts.googleapis.com/css?family=Passion+One%7CTajawal" rel="stylesheet">
   <link href="styles/reset.css" rel="stylesheet">
   <!--  css-->
-  <link href="new-styles.css/new-styles.css" rel="stylesheet" style="text/css">
+  <link href="new-styles.css/new-styles.css" rel="stylesheet">
 </head>
 <body>
   <header>     
 <!--  Top level navigation menu-->
     <ul class="topnav">
     <li><a href="index.html"><img class="logo" alt="FESC logo" src="images/fesc_logo_black_text_transp.svg"> </a></li>
-    <li><a href="index.html">Home</a></li>  
-    <li><a href="fesc-research.html" class="active">Research</a></li> 
+    <li><a href="index.html" class="active">Home</a></li>  
+    <li><a href="fesc-research.html">Research</a></li> 
     <li><a href="education.html">Education</a></li>
     <li><a href="#">Contact</a></li> 
     <li class="dropdown">
@@ -60,9 +105,9 @@
       <a href="#">User Facilities</a>
       <a href="#">Energy Industry</a>
       <a href="#">Advisory Board</a>
+      </div>
 <!--          Search box-->
     <li><input placeholder="Search.." type="text" name="search" class="search"></li>
-    </div>
     </ul>
   </header>
   <!--  SVG hero image-->
@@ -77,8 +122,6 @@
   <p>
     The Florida Energy Systems Consortium <span>research funding was designated for FAU, FIU, FSU, UCF, UF, and USF.</span> The FESC Steering Committee set a collaborative university research agenda that focuses on those areas that can most impact the State of Florida. This agenda has an overarching strategic research direction of understanding Florida’s energy systems. By doing so, the Consortium provides meaningful analyses to guide the development of a State strategic energy plan, identify opportunities for improved efficiency, and assess the impact of proposed changes, all of which lead to more informed actions.
   </p>
-    </div>
-    <div class="content">
   <h2 class="headline">
     Strategic Research Thrusts of FESC
   </h2>
@@ -91,8 +134,9 @@
     <li>Exploiting Florida’s Ocean Energy Resources</li>
     <li>Securing our Energy Storage and Delivery Infrastructure</li>
   </ol>
+      </div>
   <!--    div that will hold the line chart-->
-<div id="chart_div">
+  <div id="chart_div"></div>
   <div id="response"></div>  
   <footer>
 <!--    Logo showcase-->
